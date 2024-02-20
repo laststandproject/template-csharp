@@ -104,9 +104,9 @@ dotnet_style_require_accessibility_modifiers = for_non_interface_members:warning
 csharp_preserve_single_line_blocks = true
 csharp_preserve_single_line_statements = true
 
-dotnet_naming_symbols.private_members.applicable_kinds = parameter, local
-# I'm not sure what parameters are classified as...
-dotnet_naming_symbols.private_members.applicable_accessibilities = *
+dotnet_naming_symbols.private_members.applicable_kinds = property, event, local, field
+dotnet_naming_symbols.private_members.applicable_accessibilities = internal, private, protected_internal, private_protected, local
+dotnet_naming_symbols.private_members.required_modifiers = 
 
 # Style Definitions
 dotnet_naming_style.camel_case_style.capitalization = camel_case
